@@ -1,0 +1,37 @@
+
+public class Example {
+
+	public static void main(String[] args) {
+		
+		int i = 10;
+		try
+		{
+			int j = i/0;
+		}
+		catch(Exception e)
+		{
+			System.err.println("error");
+		}
+		finally
+		{
+			System.out.println("Bhag !");
+		}
+
+	}
+
+}
+/*
+ * System.err.println("Hello World "); that prints message in red color which seems as error in code.
+Exception error is found at run time not at compile time.To overcome on this we need to use try and catch method that will remove this problem.If statement inside try is true then it will not show any error.We can write as
+
+try
+{
+
+}
+catch(Exception e)  or catch(ArithmeticException e)
+{
+	
+}
+
+We can use finnaly block to print even we get exception in our code.It will print whatever in the finnaly block.
+ */
